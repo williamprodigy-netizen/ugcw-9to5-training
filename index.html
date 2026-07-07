@@ -6,10 +6,10 @@
 <title>UGC World - Free Live Training</title>
 <style>
   :root{
-    --bg:#f2f6f5; --bg2:#fbfdfc; --card:#ffffff;
-    --ink:#1f2e34; --ink2:#586a70;
-    --mag:#0fae9e; --pink:#27c58a; --magdeep:#0b8378; --soft:#d3f0ea;
-    --marker:#cfeee1; --line:#e0e9e6; --grn:#1a9c8f;
+    --bg:#f5f2fb; --bg2:#fbf9ff; --card:#ffffff;
+    --ink:#241b38; --ink2:#615a75;
+    --mag:#7c3aed; --pink:#9d6bf5; --magdeep:#5b21b6; --soft:#e7defb;
+    --marker:#e6d8fb; --line:#e7e0f4; --grn:#1fae66;
     --serif:Georgia,"Times New Roman",serif;
   }
   *{box-sizing:border-box}
@@ -41,8 +41,8 @@
 
   .formhead{font-size:23px;font-weight:800;margin:0 auto 16px;max-width:520px;line-height:1.25}
   .form{max-width:620px;margin:0 auto}
-  .form input{width:100%;border:1px solid #d3e0dc;background:#fff;border-radius:14px;padding:17px 20px;font-size:16px;color:var(--ink);margin-bottom:13px;font-family:inherit}
-  .form input::placeholder{color:#94a5a0}
+  .form input{width:100%;border:1px solid #ddd4ee;background:#fff;border-radius:14px;padding:17px 20px;font-size:16px;color:var(--ink);margin-bottom:13px;font-family:inherit}
+  .form input::placeholder{color:#9c92b5}
   .cta{width:100%;border:0;cursor:pointer;background:linear-gradient(120deg,var(--mag),var(--pink));color:#fff;border-radius:60px;
     padding:22px;box-shadow:0 12px 26px rgba(193,62,193,.38);transition:transform .08s}
   .cta:active{transform:translateY(3px)}
@@ -72,16 +72,16 @@
   .cd{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-bottom:16px}
   .cd .u{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 4px;min-width:66px}
   .cd .u b{display:block;font-size:26px;font-weight:900;color:var(--mag);line-height:1}
-  .cd .u small{font-size:10px;color:#8a9a95;letter-spacing:.1em;text-transform:uppercase}
+  .cd .u small{font-size:10px;color:#948bad;letter-spacing:.1em;text-transform:uppercase}
   .ctablock .after{color:var(--mag);font-weight:700;font-size:14px;margin-top:12px}
 
   /* proof wall */
   .wall{padding:44px 0 10px;text-align:center}
   .wall h2{font-size:34px;font-weight:800;letter-spacing:-.02em;margin:0 0 8px}
   .wall .subh{font-size:16px;color:var(--ink2);max-width:600px;margin:0 auto 24px;font-weight:600}
-  .pgrid{columns:3;column-gap:14px;padding:22px;background:linear-gradient(135deg,#f2faf7,#e9f4f0);border:1px solid var(--line);border-radius:20px}
-  .ptile{break-inside:avoid;margin-bottom:14px;border-radius:12px;overflow:hidden;background:#1c2b2e;color:#9fb2ad;
-    font-size:12px;min-height:120px;display:grid;place-items:center;text-align:center;padding:16px;border:1px solid #2c3d3f}
+  .pgrid{columns:3;column-gap:14px;padding:22px;background:linear-gradient(135deg,#f6f1fc,#eee6fa);border:1px solid var(--line);border-radius:20px}
+  .ptile{break-inside:avoid;margin-bottom:14px;border-radius:12px;overflow:hidden;background:#201a33;color:#a89dc4;
+    font-size:12px;min-height:120px;display:grid;place-items:center;text-align:center;padding:16px;border:1px solid #322a4a}
   .ptile img{width:100%;display:block}
   .walltag{display:inline-block;margin-top:18px;background:var(--soft);color:var(--magdeep);font-weight:800;font-size:13px;border-radius:30px;padding:8px 18px}
 
@@ -134,7 +134,7 @@ const CONFIG = {
 
   eyebrow:     "100% Free LIVE Training:",
   revealLine:  "New 2026 Creator Opportunity Reveals:",
-  headline:    "How Busy 9-5 Workers Are Adding An Extra {$3-10K/Month} In Brand Deals",
+  headline:    "How Busy 9-5 Workers Are Adding An Extra {$3-10K/Month} In Brand Partnerships",
   subhead:     "Gloria went from $14/hr at Walmart to six figures a year filming simple content for brands like Adobe and Canva. On this free live training she breaks down the exact system to build a second income on the side of your job, with no following and no experience.",
   benefits:    ["No followers needed", "No experience needed", "Just your phone"],
   eventDate:   "Sunday, July 11, 2026 at 2:00 PM EST",
@@ -145,7 +145,7 @@ const CONFIG = {
   ctaSub:      "Show up LIVE to unlock your free gifts",
   finePrint:   "Live on *Sunday, July 11 at 2:00 PM EST*. No replay. The free gifts are for live attendees only.",
 
-  miniProofCap:"1,000+ students trained. Real, verified brand deals.",
+  miniProofCap:"1,000+ students trained. Real, verified brand partnerships.",
 
   learnHeading:"Here's {Everything} You'll Learn On The Training:",
   cards: [
@@ -160,7 +160,7 @@ const CONFIG = {
   cta2After:   "Show up LIVE to unlock your 2 free gifts",
 
   /* ---- SOCIAL PROOF SCREENSHOT WALL (student brand deals) ---- */
-  proofHeading:"Real Brand Deals From Real Students",
+  proofHeading:"Real Brand Partnerships From Real Students",
   proofSub:    "Actual screenshots from women inside UGC World. Most had zero followers when they started.",
   proofImages: ["","","","","","","","",""],   // drop student brand-deal screenshots here (empty = placeholder tiles)
   proofTag:    "Hundreds more on the results page",
@@ -168,7 +168,7 @@ const CONFIG = {
   /* ---- FREE GIFTS ---- */
   giftHeading: "Show Up Live And Get These {2 Free Gifts}",
   gifts: [
-    { tag:"FREE GIFT #1", title:"My Exact Brand Outreach Script", body:"The word-for-word script I used to land my first paid deal. The same one that's helped students get their first paid brand deal in a single week." },
+    { tag:"FREE GIFT #1", title:"My Exact Brand Outreach Script", body:"The word-for-word script I used to land my first paid partnership. The same one that's helped students get their first paid brand partnership in a single week." },
     { tag:"FREE GIFT #2", title:"A Free Plug-And-Play Portfolio", body:"A done-for-you portfolio template you copy, fill in, and send to brands the same day. The exact format that gets creators booked with no following." },
   ],
   onlyLive:    "Both free gifts are for live attendees only.",
